@@ -1,7 +1,7 @@
 # Analysis of Compound V2 Wallet Risk Scoring Model
 
 ## Overview
-The Compound V2 Wallet Risk Scoring Model assigns risk scores (0–1000) to 100 wallet addresses based on transaction data from 96 JSON files, using unsupervised machine learning. The model employs Isolation Forest for anomaly detection and K-Means clustering for non-anomalous wallet scoring, achieving the desired score distribution: anomalous wallets in 0–200 (higher risk) and non-anomalous wallets in 600–1000 (lower risk).
+The Compound V2 Wallet Risk Scoring Model assigns risk scores (0–1000) to 100 wallet addresses based on transaction data from 96 JSON files, using unsupervised machine learning. The model employs Isolation Forest for anomaly detection and K-Means clustering for non-anomalous wallet scoring, achieving the desired score distribution: anomalous wallets in 0–200 (higher risk) and non-anomalous wallets in 700–1000 (lower risk).
 Score Distribution
 
 ## Anomalous Wallets (0–200): 
