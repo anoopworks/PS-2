@@ -37,7 +37,7 @@ Normalize distances to [0, 1] using min-max normalization: (distances - min_dist
 Apply exponential decay: score = 700 + 300 * exp(-3 * normalized_distances), mapping scores to 700–1000. Closer profiles (lower distances) score closer to 1000 (lower risk).
 
 
-Output: Scores are saved to compound_risk_scores.xlsx, with a histogram visualizing anomalous (0–200) and non-anomalous (600–1000) distributions.
+Output: Scores are saved to compound_risk_scores.xlsx, with a histogram visualizing anomalous (0–200) and non-anomalous (700–1000) distributions.
 
 This approach ensures robust risk assessment, leveraging financial behavior patterns in the absence of labeled data.
 
