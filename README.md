@@ -25,4 +25,4 @@ Place the 96 JSON files in a data/ directory.
 Run generate_wallet_transactions.py to process JSONs into wallet_transactions.json.
 Run compound_risk_scoring.py to compute scores:python compound_risk_scoring.py
 
-Outputs: compound_risk_scores.xlsx (wallet scores) and a histogram.
+Outputs: compound_risk_scores.csv (wallet scores) and a histogram.
