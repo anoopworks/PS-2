@@ -10,7 +10,7 @@ The dataset comprises 96 JSON files, each containing transaction lists for depos
 ## Data Collection
 Transaction data was provided as 96 JSON files, likely sourced from Compound V2's on-chain records via APIs (e.g., The Graph or Etherscan). These files are processed into a wallet_transactions dictionary, where each wallet ID maps to a list of transactions with keys account.id, amountUSD, asset.symbol, timestamp, and type, enabling structured analysis.
 
-## Feature Engineering
+## Feature Engineering & Selection Rationale
 Transactions from 96 JSON files are aggregated by wallet address, counting occurrences and summing USD amounts for deposits, withdraws, borrows, repays, and liquidates. Derived metrics include borrow-to-deposit ratio, repay-to-borrow ratio, liquidation-to-borrow ratio, time span (days between first and last transaction), and unique assets (distinct asset.symbol values). These features capture financial behavior: high borrows or liquidations indicate risk, while frequent deposits and repays signal stability. Ratios quantify borrowing and default tendencies relative to deposits, reflecting leverage and repayment reliability. Time span and unique assets measure experience and diversification, reducing risk. Selected for their relevance to lending protocol dynamics, these features enable robust differentiation of risky (high borrows/liquidations) versus stable (high deposits/repays) wallet profiles.
 
 ## Scoring Method
