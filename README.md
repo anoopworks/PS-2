@@ -34,7 +34,7 @@ Anomaly Detection: Isolation Forest (10% contamination) identifies anomalous wal
 Non-Anomalous Scoring: K-Means (5 clusters) groups non-anomalous wallets. Scores are computed based on Euclidean distance to an ideal profile (maximizing positive features like num_deposits, total_repay_usd, minimizing negative ones like num_liquidations):
 Compute distances to the standardized ideal profile.
 Normalize distances to [0, 1] using min-max normalization: (distances - min_dist) / (max_dist - min_dist + 1e-6).
-Apply exponential decay: score = 600 + 400 * exp(-3 * normalized_distances), mapping scores to 600–1000. Closer profiles (lower distances) score closer to 1000 (lower risk).
+Apply exponential decay: score = 700 + 300 * exp(-3 * normalized_distances), mapping scores to 700–1000. Closer profiles (lower distances) score closer to 1000 (lower risk).
 
 
 Output: Scores are saved to compound_risk_scores.xlsx, with a histogram visualizing anomalous (0–200) and non-anomalous (600–1000) distributions.
