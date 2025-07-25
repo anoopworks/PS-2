@@ -45,7 +45,10 @@ This approach ensures robust risk assessment, leveraging financial behavior patt
 High borrow-to-deposit and liquidation-to-borrow ratios indicate risk, reflecting over-leveraging or default. Frequent deposits and repays signal responsibility, reducing risk. Time span and unique assets denote experience and diversification, lowering risk profiles. These align with lending protocol dynamics.
 Setup and Usage
 
-Install dependencies: pip install pandas numpy scikit-learn matplotlib seaborn
+### Install dependencies:
+```python
+pip install pandas numpy scikit-learn matplotlib seaborn
+```
 Place the 96 JSON files in a data/ directory.
 Run generate_wallet_transactions.py to process JSONs into wallet_transactions.json.
 Run compound_risk_scoring.py to compute scores:python compound_risk_scoring.py
